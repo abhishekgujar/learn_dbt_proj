@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: learningschema  # Optional: specify if different from default
+    database: SNOWFLAKE_LEARNING_DB   # Optional: specify if different from default
+    schema: SNOWFLAKE_LEARNING_SCHEMA       # Replace with your actual schema
+    tables:
+      - name: customer
+        identifier: CUSTOMERS  # Optional: specify if different from table name
+        description: "Customer data from the CRM system"
+      - name: employee
+        identifier: EMPLOYEES  # Optional: specify if different from table name
+        description: "Employee data from the HR system"
+      - name: order
+        identifier: ORDERS  # Optional: specify if different from table name
+        description: "Order data from the e-commerce platform"
+      - name: orderitem
+        identifier: ORDERITEMS  # Optional: specify if different from table name
+        description: "Order items data linked to orders"
+      - name: product
+        identifier: PRODUCTS  # Optional: specify if different from table name
+        description: "Product data from the inventory system"
+      - name: store
+        identifier: STORES  # Optional: specify if different from table name
+        description: "Store data from the retail management system"
+      - name: supplier
+        identifier: SUPPLIERS  # Optional: specify if different from table name
+        description: "Supplier data from the retail management system"
+
+      - name: city_temperature
+        identifier: CITY_TEMPERATURE  # Optional: specify if different from table name
+        description: "Average monthly temperatures for various cities"
+      
+      - name: sales_india
+        identifier: SALES_INDIA  # Optional: specify if different from table name
+        description: "Sales data for the India region"
+      - name: sales_us
+        identifier: SALES_US  # Optional: specify if different from table name
+        description: "Sales data for the USA region"
+      - name: sales_uk
+        identifier: SALES_UK  # Optional: specify if different from table name
+        description: "Sales data for the UK region"

@@ -1,0 +1,8 @@
+models:
+    - name: customer_stg
+      description: "Staging table for customer data"
+      columns:
+        - name: Email
+          tests:
+            - string_not_empty
+   

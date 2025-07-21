@@ -1,0 +1,28 @@
+name: 'learn_dbt_proj'
+version: '1.0.0'
+profile: 'learn_dbt_proj'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  +transient: false
+  learn_dbt_proj:
+    +materialized: view
+    +schema: 'SNOWFLAKE_LEARNING_SCHEMA'
+
+seeds:
+  learn_dbt_proj:
+    +target_schema: SNOWFLAKE_LEARNING_SCHEMA
+
+snapshots:
+  learn_dbt_proj:
+    +target_schema: SNOWFLAKE_LEARNING_SCHEMA
