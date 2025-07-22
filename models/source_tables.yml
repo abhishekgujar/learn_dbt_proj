@@ -8,6 +8,12 @@ sources:
       - name: customer
         identifier: CUSTOMERS
         description: "Customer data from the CRM system"
+        columns:
+            - name: CUSTOMERID
+              description: "Unique identifier for each customer"
+              tests:
+                - unique
+                - not_null
       - name: employee
         identifier: EMPLOYEES
         description: "Employee data from the HR system"
