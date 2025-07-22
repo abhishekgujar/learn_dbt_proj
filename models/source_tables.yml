@@ -1,42 +1,48 @@
 version: 2
 
 sources:
-  - name: learningschema  # Optional: specify if different from default
-    database: SNOWFLAKE_LEARNING_DB   # Optional: specify if different from default
-    schema: SNOWFLAKE_LEARNING_SCHEMA       # Replace with your actual schema
+  - name: learningschema
+    database: SNOWFLAKE_LEARNING_DB
+    schema: SNOWFLAKE_LEARNING_SCHEMA
     tables:
       - name: customer
-        identifier: CUSTOMERS  # Optional: specify if different from table name
+        identifier: CUSTOMERS
         description: "Customer data from the CRM system"
       - name: employee
-        identifier: EMPLOYEES  # Optional: specify if different from table name
+        identifier: EMPLOYEES
         description: "Employee data from the HR system"
       - name: order
-        identifier: ORDERS  # Optional: specify if different from table name
+        identifier: ORDERS
         description: "Order data from the e-commerce platform"
+
       - name: orderitem
-        identifier: ORDERITEMS  # Optional: specify if different from table name
+        identifier: ORDERITEMS
         description: "Order items data linked to orders"
+
       - name: product
-        identifier: PRODUCTS  # Optional: specify if different from table name
+        identifier: PRODUCTS
         description: "Product data from the inventory system"
+
       - name: store
-        identifier: STORES  # Optional: specify if different from table name
+        identifier: STORES
         description: "Store data from the retail management system"
+
       - name: supplier
-        identifier: SUPPLIERS  # Optional: specify if different from table name
+        identifier: SUPPLIERS
         description: "Supplier data from the retail management system"
 
       - name: city_temperature
-        identifier: CITY_TEMPERATURE  # Optional: specify if different from table name
+        identifier: CITY_TEMPERATURE
         description: "Average monthly temperatures for various cities"
-      
+
       - name: sales_india
-        identifier: SALES_INDIA  # Optional: specify if different from table name
+        identifier: SALES_INDIA
         description: "Sales data for the India region"
+
       - name: sales_us
-        identifier: SALES_US  # Optional: specify if different from table name
+        identifier: SALES_US
         description: "Sales data for the USA region"
+
       - name: sales_uk
-        identifier: SALES_UK  # Optional: specify if different from table name
+        identifier: SALES_UK
         description: "Sales data for the UK region"
